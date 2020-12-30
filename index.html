@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" type="image⁄x-icon" href="logo.png" />
+ 
+    
+    <title>Movie Seat Booking</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+    </style>
+  </head>
+  <body style="overflow: hidden">
+    <div class="movielist">
+      <h3 class="explanation">Pick a movie:</h3>
+
+      <select class="movie js-movie">
+        <option value="10">About Time ($10)</option>
+        <option value="11" selected="selected">The Dark Night ($11)</option>
+        <option value="6">Life of Pi ($6)</option>
+        <option value="8">Interstellar ($8)</option>
+      </select>
+    </div>
+
+    <ul class="seatstatus">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+      <li>
+        <div class="seat couple"></div>
+        <small>SweetBox</small>
+      </li>
+    </ul>
+
+    <div class="frame js-frame">
+      <div class="screen"></div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat couple"></div>
+        <div class="seat couple"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat couple"></div>
+        <div class="seat couple"></div>
+      </div>
+    </div>
+    <h3 class="fee">
+      You have selected <span class="count js-count">0</span> seats for a price of $<span
+        class="total js-total">0</span>
+    </h3>
+
+    <script src="index.js"></script>
+  </body>
+</html>

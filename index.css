@@ -1,0 +1,156 @@
+body {
+  background-color: #292a33;
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.movielist {
+  width: fit-content;
+  margin: 20px 0;
+}
+
+.explanation {
+  all: unset;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 0.4px;
+}
+
+.movie {
+  margin-left: 10px;
+  border-radius: 5px;
+  width: 200px;
+  height: 28px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #dddddd;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding: 5px 17px;
+
+  color: #424549;
+  box-shadow: 0 15px 30px -10px;
+}
+
+.movie:hover {
+  outline: none;
+  border: 1px solid #aaaaaa;
+}
+
+.seatstatus {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.1);
+  color: #aaaaaa;
+
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.seatstatus li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.seatstatus li small {
+  margin-left: 3px;
+}
+.seat {
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: #6fffe9;
+}
+
+.seat.occupied {
+  background-color: white;
+}
+
+.seat.couple {
+  background-color: #f5487f;
+}
+
+.row {
+  display: flex;
+}
+
+.fee {
+  all: unset;
+  color: white;
+  font-size: 16px;
+  margin-top: 30px;
+  letter-spacing: 0.4px;
+}
+
+.frame {
+  perspective: 1000px;
+}
+
+.screen {
+  background-color: white;
+  height: 81px;
+  width: 100%;
+  margin: 11px 3px;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  animation: flash 0.5s ease-out alternate infinite;
+}
+
+.screen::before {
+  position: absolute;
+  left: 0;
+  top: -10%;
+  width: 100%;
+  height: 110%;
+  background: #fff;
+  filter: blur(9px);
+  content: "";
+  opacity: 0;
+  animation: flash 0.9s ease-out alternate infinite;
+}
+@keyframes flash {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes flashText {
+  to {
+    opacity: 0.15;
+  }
+}
+
+span {
+  color: #db4455;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 19px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 19px;
+}
+
