@@ -2,10 +2,10 @@
 ##### 영화관 좌석 예매 사이트
 <hr>
 
-## Result
+### Result
 
 
-#### 영화 클릭 시 해당 영화의 가격으로 변경됨 <br> 다른 영화를 클릭 할 때마다 초기화
+영화 클릭 시 해당 영화의 가격으로 변경됨 <br> 다른 영화를 클릭 할 때마다 초기화
 
 
 ![ezgif com-gif-maker (10)](https://user-images.githubusercontent.com/63100352/111788117-0cf19c00-8903-11eb-8e36-9f0949d10ef3.gif)
@@ -39,6 +39,7 @@ const getSelectValue = (event) => {
   reset();
 };
 ```
+<br>
 
 선택 좌석 수와 해당 영화의 가격을 곱해 총 가격을 나타냄
 ```js
