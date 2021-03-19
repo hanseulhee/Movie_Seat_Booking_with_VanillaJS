@@ -2,22 +2,50 @@
 ##### 영화관 좌석 예매 사이트
 <hr>
 
-### Result
+## Result
 
 
-#### 영화 클릭 시 해당 영화의 가격으로 변경됨
-
-##### 다른 영화를 클릭 할 때마다 초기화
+#### 영화 클릭 시 해당 영화의 가격으로 변경됨 <br> 다른 영화를 클릭 할 때마다 초기화
 
 
 ![ezgif com-gif-maker (10)](https://user-images.githubusercontent.com/63100352/111788117-0cf19c00-8903-11eb-8e36-9f0949d10ef3.gif)
 
 
-![main](https://user-images.githubusercontent.com/63100352/111787160-f7c83d80-8901-11eb-8611-77773579b0ae.PNG)
 
 ![2021-03-19 (1)](https://user-images.githubusercontent.com/63100352/111787623-8210a180-8902-11eb-8317-a4879697c236.png)
 
 ---
 
+### 개발 사항
 
+다른 영화 클릭하면 좌석과 가격을 초기화
 
+```js
+// 초기화 함수
+const reset = () => {
+  count.innerHTML = 0;
+  total.innerHTML = 0;
+
+  selectedSeat = 0;
+
+  seats.forEach((seat) => {
+    seat.classList.remove(SEAT_SELECT_CN);
+  });
+};
+
+const getSelectValue = (event) => {
+  movieCost = parseInt(event.target.value);
+  // 초기화 함수 실행
+  reset();
+};
+```
+
+선택 좌석 수와 해당 영화의 가격을 곱해 총 가격을 나타냄
+```js
+const changeCount = () => {
+  count.innerHTML = selectedSeat;
+  total.innerHTML = selectedSeat * movieCost;
+};
+```
+
+---

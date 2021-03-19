@@ -13,7 +13,6 @@ const SEAT_OCCUPIED_CN = "occupied";
 
 const changeCount = () => {
   count.innerHTML = selectedSeat;
-
   total.innerHTML = selectedSeat * movieCost;
 };
 
