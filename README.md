@@ -5,8 +5,6 @@
 ### Result
 
 
-영화 클릭 시 해당 영화의 가격으로 변경됨 <br> 다른 영화를 클릭 할 때마다 초기화
-
 
 ![ezgif com-gif-maker (10)](https://user-images.githubusercontent.com/63100352/111788117-0cf19c00-8903-11eb-8e36-9f0949d10ef3.gif)
 
